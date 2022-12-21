@@ -1,3 +1,5 @@
 export type Option = {
- id: number|null, name: string, unavailable?: boolean
-}
+  id: number | null;
+  name: string;
+  unavailable?: boolean;
+};

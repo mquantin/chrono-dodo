@@ -9,9 +9,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "format:check": "prettier -c src/**/*.{ts,tsx}",
-    "format": "prettier -w src/**/*.{ts,tsx}",
-    "lint": "eslint . --ext .ts,.tsx",
+    "format:check": "prettier -c \"src/**.{js,jsx,ts,tsx}\"",
+    "format": "pnpm prettier -w \"src/**.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**.{js,jsx,ts,tsx}\" --fix",
     "preview": "vite preview"
   },
   "dependencies": {

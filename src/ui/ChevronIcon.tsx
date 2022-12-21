@@ -1,20 +1,16 @@
-import {IconBaseProps} from "react-icons/lib";
+import { ChevronDownIcon, ChevronRightIcon, ChevronUpDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 
-import {BiChevronDown, BiChevronLeft, BiChevronRight, BiChevronsDown, BiChevronUp} from "react-icons/all";
+type ChevronUpDownIconProps = { direction: 'top' | 'right' | 'down' | 'left' };
 
-type ChevronUpDownIconProps = IconBaseProps & {direction: "top"|"right"|"down"|"left"}
-
-export const ChevronIcon = ({direction="left", ...rest}:ChevronUpDownIconProps) => {
-
+export const ChevronIcon = ({ direction = 'left', ...rest }: ChevronUpDownIconProps) => {
   switch (direction) {
     case 'top':
-      return <BiChevronUp {...rest}/>
+      return <ChevronUpDownIcon {...rest} />;
     case 'right':
-      return <BiChevronRight {...rest}/>
+      return <ChevronRightIcon {...rest} />;
     case 'down':
-      return <BiChevronDown {...rest}/>
+      return <ChevronDownIcon {...rest} />;
     default:
-      return <BiChevronLeft {...rest}/>
+      return <ChevronUpIcon {...rest} />;
   }
-
-}
+};
