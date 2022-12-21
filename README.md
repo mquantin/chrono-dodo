@@ -4,7 +4,7 @@ react app for "chrono dodo" method
 ## Install
 ### Clone project
 ```
-git clone
+git clone git@github.com:mquantin/chrono-dodo.git
 ```
 
 ### Install package manager (pnpm)
