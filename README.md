@@ -1,11 +1,13 @@
-# INSTALLATION
+# Chrono-dodo
+react app for "chrono dodo" method
 
-## Clone project
+## Install
+### Clone project
 ```
 git clone
 ```
 
-## Install package manager (pnpm)
+### Install package manager (pnpm)
 ```sh
 corepack enable
 corepack prepare pnpm@latest --activate
@@ -16,12 +18,14 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 source ~/.bashrc
 ```
 
-## Install dependencies
+### Install dependencies
 ```sh
 pnpm install
 ```
 
-## Run project
+### Run project
 ```sh
 pnpm run dev
 ```
+## Licence
+GNU General Public License v3.0
