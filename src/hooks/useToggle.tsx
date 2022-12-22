@@ -1,8 +1,9 @@
 // https://usehooks.com/useToggle/
-import {useCallback, useState} from "react";
+import { useCallback, useState } from 'react';
 
-export const useToggle = (initialState: boolean = false): [boolean, any] => {
+type UseToggleType = [boolean, () => void];
+export const useToggle = (initialState = false): UseToggleType => {
   const [state, setState] = useState<boolean>(initialState);
-  const toggle = useCallback((): void => setState(state => !state), []);
-  return [state, toggle]
-}
+  const toggle = useCallback((): void => setState((state) => !state), []);
+  return [state, toggle];
+};
